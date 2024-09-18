@@ -1,8 +1,30 @@
+body {
+  background-color: rgb(232, 193, 121);
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 900px) {
+  a.topnav {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
+
 h1 {
   text-align: center;
   color: blue;
 }
 
-img {
-  border-radius: 50%;
+a.topnav {
+  white-space: nowrap;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+p.topnav {
+  text-align: center;
 }
