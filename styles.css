@@ -4,9 +4,18 @@ body {
   margin-right: 20%;
   margin-top: 5%;
   margin-bottom: 10%;
+  transition: 0.5s;
+  font-size: 100%;
 }
 
 @media only screen and (max-width: 900px) {
+  body {
+    margin-left: 6%;
+    margin-right: 6%;
+    transition: 0.5s;
+    font-size: 120%;
+  }
+  
   a.topnav {
     display: block;
     margin-top: 4px;
