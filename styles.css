@@ -1,4 +1,6 @@
 body {
+  background-image: url("images/websitebg.png");
+  background-repeat: repeat-x repeat-y;
   background-color: rgb(232, 193, 121);
   margin-left: 20%;
   margin-right: 20%;
