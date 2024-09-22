@@ -1,6 +1,7 @@
 body {
   background-image: url("images/websitebgbetter.png");
-  background-repeat: repeat-x repeat-y;
+  background-repeat:repeat-y;
+  background-size: 100%;
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 5%;
@@ -29,6 +30,12 @@ h1 {
   color: blue;
 }
 
+p {
+  display: block;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+
 a.topnav {
   white-space: nowrap;
   margin-left: 50px;
@@ -37,4 +44,5 @@ a.topnav {
 
 p.topnav {
   text-align: center;
+  background-color: none;
 }
