@@ -53,3 +53,7 @@ p.topnav {
   text-align: center;
   background-color: none;
 }
+
+#failed {
+  color: red;
+}
