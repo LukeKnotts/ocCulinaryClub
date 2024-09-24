@@ -11,7 +11,7 @@ function updateText(){
 }
 function uhoh(){
     var b = document.getElementById("secret");
-    if (namey == ":3"){
+    if (namey == "hello"){
         b.style.display = "block";
     }
 }
