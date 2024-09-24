@@ -1,17 +1,20 @@
-var namey;
-function updateText(){
-    namey = document.getElementById("name").value;
-    if (namey == ""){
-        document.getElementById("greeting").innerHTML = "";
-    }else if(namey == "Rob" || namey == "rob"){
-        document.getElementById("greeting").innerHTML = "Hello " + namey + "! Its bad to see you >:)";
+var code;
+var correctPassword = "friend";
+var secondaryPass = "Friend"
+
+function passwordCheck(){
+    code = document.getElementById("name").value;
+    var hiddenStuff = document.getElementsByClassName("passProtected");
+    var unhiddenStuff = document.getElementsByClassName("passRemoved");
+    if (code == correctPassword || code == secondaryPass){
+        for (var i = 0; i < hiddenStuff.length; i++){
+            hiddenStuff[i].style.display = "block";
+        }
+        for (var i = 0; i < unhiddenStuff.length; i++){
+            unhiddenStuff[i].style.display = "none";
+        }
     }else{
-        document.getElementById("greeting").innerHTML = "Hello " + namey + "! Its good to see you :)";
-    }
-}
-function uhoh(){
-    var b = document.getElementById("secret");
-    if (namey == "hello"){
-        b.style.display = "block";
+        var h = document.getElementById("failed");
+        h.innerHTML = "\"" + code + "\" didn't work..."
     }
 }
