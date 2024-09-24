@@ -9,20 +9,24 @@
 </head>
 
 <body>
-    <script src="../foilgridcode.js"> </script>
-    <script> updateText(); </Script>
+    <script src="../passwordProtect.js"> </script> <!-- look at this script -->
+    <script> updatePassword("hello", "Incorrect Password"); </script>
     <h1>Welcome to the ocCulinary Club</h1>
   <p class="topnav"><a class="topnav" href="updates.html">Updates</a>
   <a class="topnav" href="index.html">Home</a>
   <a class="topnav" href="forums.html">Student Forums</a></p>
   <hr></hr>
-    <h2 id="password-ui" style="display: block">Password Input</h2>
-    <p id="password-ui" style="display: block"> <input type="text" name="password" value="" id="name" oninput="updateText()"> </p>
+  <!-- the following dissappear after the password -->
+    <h2 class="passRemoved"  style="display: block">Password Input</h2>
+    <p class="passRemoved" style="display: block"> <span id="failed" style="display: none"></span>
+      <input id="passwordInput" type="text" name="password" value=""> </p>
 
-    <button id="password-ui" style="display: block" onclick = uhoh()>Enter</button>
+    <button class="passRemoved" style="display: block" onclick = passwordCheck()>Enter</button>
 
-    <h2 id="secret" style="display: none">Hello</h2>
+    <!-- the following only appear after the password -->
 
-    <p id="secret" style="display: none">Here is my explanation of a code</p>
+    <h2 class="passProtected" style="display: none">Hello</h2>
+
+    <p class="passProtected" style="display: none">Here is my explanation of a code</p>
 
 </body>
