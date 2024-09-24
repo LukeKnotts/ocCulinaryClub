@@ -42,6 +42,10 @@ p {
   background-color: antiquewhite;
   padding: 10px;
 }
+ul {
+  display: block;
+  background-color: antiquewhite;
+}
 
 a.topnav {
   white-space: nowrap;
