@@ -30,10 +30,7 @@ h1 {
     color:rgb(0, 0, 0) 
 }
 
-p.powerOff{
-    color:rgb(47, 43, 66) 
-}
 
-p.powerOn{
-    color:rgb(0, 0, 0) 
+p.sneaky{
+    color: #000000;
 }
