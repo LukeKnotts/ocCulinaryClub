@@ -6,7 +6,7 @@ function updatePassword (setCode, setFail){
     correctPassword = setCode;
     failCode = setFail;
     if(failCode == null){
-        failCode = "Incorrect Password"
+        failCode = "Incorrect Password";
     }
 }
 
