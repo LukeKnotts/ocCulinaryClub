@@ -22,3 +22,18 @@ p.topnav {
 h1 {
     text-align: center;
 }
+.powerOff{
+    color:rgb(47, 43, 66) 
+}
+
+.powerOn{
+    color:rgb(0, 0, 0) 
+}
+
+p.powerOff{
+    color:rgb(47, 43, 66) 
+}
+
+p.powerOn{
+    color:rgb(0, 0, 0) 
+}

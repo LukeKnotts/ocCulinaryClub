@@ -1,6 +1,7 @@
 var code;
 var correctPassword = "friend";
 var secondaryPass = "Friend"
+var lights;
 
 function passwordCheck(){
     code = document.getElementById("name").value;
@@ -16,5 +17,33 @@ function passwordCheck(){
     }else{
         var h = document.getElementById("failed");
         h.innerHTML = "\"" + code + "\" didn't work..."
+    }
+}
+
+function flashlightToggle(){
+    switch(lights){
+        case false:
+            lights = true;
+            q = document.getElementsByClassName("powerOff");
+            for(var i = 0; i < q.length; i++){
+                q[i].className = "powerOn";
+            }
+            document.body.style.backgroundColor = "#ffffff";
+            break;
+        case true:
+            lights = false;
+            q= document.getElementsByClassName("powerOn");
+            for(var i = 0; i < q.length; i++){
+                q[i].className = "powerOff";
+            }
+            document.body.style.backgroundColor = "#000000";
+            break;
+        default:
+            lights = true;
+            q = document.getElementsByClassName("powerOff");
+            for(var i = 0; i < q.length; i++){
+                q[i].className = "powerOn";
+            }
+            document.body.style.backgroundColor = "#ffffff";
     }
 }
