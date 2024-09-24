@@ -7,8 +7,8 @@ function uhoh(){
     if (namey == "hello"){
         b.style.display = "block";
     }
-    var c = document.getElementById("passowrd-ui");
+    var d = document.getElementById("passowrd-ui");
     if (namey == "hello"){
-        c.style.display = "none";
+        d.style.display = "inline";
     }
 }
