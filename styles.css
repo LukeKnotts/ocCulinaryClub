@@ -45,6 +45,10 @@ p {
 ul {
   display: block;
   background-color: antiquewhite;
+  padding-bottom: 10px;
+}
+li {
+  padding-top: 10px;
 }
 
 a.topnav {
@@ -60,4 +64,11 @@ p.topnav {
 
 #failed {
   color: red;
+}
+
+video {
+  background-color: antiquewhite;
+  
+  align: center;
+  padding: 10px;
 }

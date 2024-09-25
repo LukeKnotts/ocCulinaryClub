@@ -1,6 +1,6 @@
 var code;
 var correctPassword = "friend";
-var secondaryPass = "Friend"
+var secondaryPass = ":3"
 var lights;
 
 function passwordCheck(){

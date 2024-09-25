@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Updates</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <h1>Welcome to the ocCulinary Club</h1>
+  <p class="topnav"><a class="topnav" href="../updates.html">Updates</a>
+  <a class="topnav" href="../index.html">Home</a>
+  <a class="topnav" href="../forums.html">Student Forums</a></p>
+  <hr>
+
+  <script src="../passwordProtect.js"> </script> <!-- look at this script -->
+  <script> updatePassword("below", "Incorrect Password"); </script>
+
+  <p class="passRemoved"> 
+    Password Input:<br>
+    <span id="failed" style="display: none"></span>
+    <input id="passwordInput" type="text" name="password" value="">
+    <button onclick = passwordCheck()>Enter</button>
+  </p>
+
+  <p class="passProtected" style="display: none"> 
+    <img src="../Images/Diaryentryluma.png" style="width: 500px"> <!-- SHOULD BE CLEANED IN CSS I HAVE NO IDEA HOW TO MAKE THE IMAGE SCALE NICE-->
+  </p>
+</body>
