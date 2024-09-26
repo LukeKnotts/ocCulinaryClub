@@ -1,9 +1,13 @@
 var correctPassword;
+var secondaryPass;
+var tertiaryPass
 var usersInput;
-var failCode;
+var failCode = "Incorrect Password";
 
-function updatePassword (setCode, setFail){ 
+function updatePassword (setCode, setSecondaryCode, setTertiaryCode){ 
     correctPassword = setCode;
+    secondaryPass = setSecondaryCode;
+    tertiaryPass = setTertiaryCode;
     failCode = setFail;
     if(failCode == null){
         failCode = "Incorrect Password";
@@ -14,7 +18,26 @@ function passwordCheck(){
     usersInput = document.getElementById("passwordInput").value;
     var hiddenStuff = document.getElementsByClassName("passProtected");
     var unhiddenStuff = document.getElementsByClassName("passRemoved");
-    if (usersInput == correctPassword){
+    var a = false;
+    switch (usersInput){
+        case correctPassword:
+            a = true;
+            break;
+        case secondaryPass:
+            if(secondaryPass != null){
+                a = true;
+                break;
+            }
+        case tertiaryPass:
+            if(tertiaryPass != null){
+                a = true;
+                break;
+            }
+        default:
+            a = false;
+    }
+
+    if (a == true){
         for (var i = 0; i < hiddenStuff.length; i++){
             hiddenStuff[i].style.display = "block";
         }
