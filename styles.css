@@ -35,20 +35,18 @@ h1 {
 h2 {
   background-color: rgb(135, 135, 135);
   padding: 5px;
+  margin-bottom: 0px;
 }
 
 p {
   display: block;
   background-color: antiquewhite;
   padding: 10px;
+  margin: 0px;
 }
 ul {
   display: block;
   background-color: antiquewhite;
-  padding-bottom: 10px;
-}
-li {
-  padding-top: 10px;
 }
 
 a.topnav {
@@ -71,4 +69,15 @@ video {
   
   align: center;
   padding: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+img.banner {
+  width: 80%;
 }
