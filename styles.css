@@ -48,6 +48,10 @@ p {
 ul {
   display: block;
   background-color: antiquewhite;
+  margin: 0px;
+}
+li {
+  padding: 5px;
 }
 
 a.topnav {
