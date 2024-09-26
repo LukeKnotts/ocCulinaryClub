@@ -26,13 +26,13 @@ function passwordCheck(){
         case secondaryPass:
             if(secondaryPass != null){
                 a = true;
-                break;
             }
+            break;
         case tertiaryPass:
             if(tertiaryPass != null){
                 a = true;
-                break;
             }
+            break;
         default:
             a = false;
     }
