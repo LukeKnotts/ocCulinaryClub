@@ -100,7 +100,7 @@ p.topnav {
 }
 
 .comment-date {
-  font-size: 50%;
+  font-size: 1.0vw;
   color: rgb(32, 32, 32);
   float: right;
 }
