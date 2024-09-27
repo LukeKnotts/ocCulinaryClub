@@ -69,6 +69,12 @@ p {
   padding: 10px;
   margin: 0px;
 }
+p.wheh {
+  display: inline;
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+}
 ul {
   display: block;
   background-color: antiquewhite;
@@ -128,4 +134,5 @@ img.pfp {
 iframe {
   display: block;
   margin: auto;
+  width: 50vw;
 }
