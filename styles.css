@@ -124,3 +124,8 @@ img.pfp {
   display: inline;
   padding: 0px 5px 5px 0px;
 }
+
+iframe {
+  display: block;
+  margin: auto;
+}
