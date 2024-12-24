@@ -16,11 +16,11 @@
   <hr>
 
   <script src="../passwordProtect.js"> </script> <!-- look at this script -->
-  <script> updatePassword("That yet we sleep, we dream."); </script>
+  <script> updatePassword("that yet we sleep we dream"); </script>
 
   <p class="passRemoved"> 
     Password Input:<br>
-    <span id="failed" style="display: none"></span>
+    <span id="failed" style="display: none">Incorrect password. 6 written words, use spaces but remove punctuation.</span>
     <input id="passwordInput" type="password" name="password" value="">
     <button onclick = passwordCheck()>Enter</button>
   </p>
