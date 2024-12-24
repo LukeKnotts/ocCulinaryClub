@@ -2,7 +2,7 @@ var correctPassword;
 var secondaryPass;
 var tertiaryPass
 var usersInput;
-var failCode = "Incorrect Password";
+// var failCode = "Incorrect Password, bummer";
 
 function updatePassword (setCode, setSecondaryCode, setTertiaryCode){ 
     correctPassword = setCode;
@@ -10,12 +10,13 @@ function updatePassword (setCode, setSecondaryCode, setTertiaryCode){
     tertiaryPass = setTertiaryCode;
     failCode = setFail;
     if(failCode == null){
-        failCode = "Incorrect Password";
+        failCode = "Incorrect Password.";
     }
 }
 
 function passwordCheck(){
     usersInput = document.getElementById("passwordInput").value;
+    usersInput = usersInput.toLowerCase();
     var hiddenStuff = document.getElementsByClassName("passProtected");
     var unhiddenStuff = document.getElementsByClassName("passRemoved");
     var a = false;
@@ -45,7 +46,7 @@ function passwordCheck(){
             unhiddenStuff[i].style.display = "none";
         }
     }else{
-        document.getElementById("failed").innerHTML = failCode;
+        // document.getElementById("failed").innerHTML = failCode;
         document.getElementById("failed").style.display = "block";
     }
 }
