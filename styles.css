@@ -1,7 +1,6 @@
 body {
-  background-image: url("/images/websitebgbetter.png");
+  background-image: url("Images/websitebgbetter.png");
   background-repeat:repeat-y;
-  background-color: black;
   background-size: 100%;
   margin-left: 20%;
   margin-right: 20%;
